@@ -28,6 +28,15 @@
     int numberOfEntreesOrdered = 0;
     int numberOfWineBottlesOrdered = 0;
     
+    numberOfAppetizersOrdered = numberOfGuests/2;
+    numberOfDessertsOrdered = numberOfGuests;
+    numberOfEntreesOrdered = numberOfGuests;
+    numberOfWineBottlesOrdered = numberOfGuests/4;
+    
+    dinnerPrice = (numberOfAppetizersOrdered*appetizerPrice) + (numberOfDessertsOrdered*dessertPrice) + (numberOfEntreesOrdered*entreePrice) + (numberOfWineBottlesOrdered*winePrice);
+    
+    taxes = dinnerPrice*taxRate;
+    tip = dinnerPrice*tipRate;
     
     /* Set dinnerPrice to be the cost of:
         1 entree per person
