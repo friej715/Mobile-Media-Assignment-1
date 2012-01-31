@@ -28,10 +28,10 @@
     int numberOfEntreesOrdered = 0;
     int numberOfWineBottlesOrdered = 0;
     
-    numberOfAppetizersOrdered = numberOfGuests/2;
+    numberOfAppetizersOrdered = ceil((float)numberOfGuests/2.0);
     numberOfDessertsOrdered = numberOfGuests;
     numberOfEntreesOrdered = numberOfGuests;
-    numberOfWineBottlesOrdered = numberOfGuests/4;
+    numberOfWineBottlesOrdered = ceil((float)numberOfGuests/4.0);
     
     dinnerPrice = (numberOfAppetizersOrdered*appetizerPrice) + (numberOfDessertsOrdered*dessertPrice) + (numberOfEntreesOrdered*entreePrice) + (numberOfWineBottlesOrdered*winePrice);
     
